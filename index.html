@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Support</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card: #f5f5f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --text: #ffffff;
+    --card: #1c1c1e;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.app-card {
+  display: block;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: var(--text);
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>App Support</h1>
+
+  <a class="app-card" href="reversi/">
+    <h2>リバーシ - 最強の一手のサポートページ</h2>
+  </a>
+
+  <a class="../app-support/app-card" href="flexcare/">
+    <h2>ストレッチ習慣のサポートページ</h2>
+  </a>
+
+  <a class="app-card" href="../app-support/notica/">
+    <h2>Noticaのサポートページ</h2>
+  </a>
+  <a class="app-card" href="../app-support/chainpuzzle/">
+    <h2>チェイン・パズルのサポートページ</h2>
+  </a>
+  <!-- <a class="app-card" href="../app-support/parkmate/">
+    <h2>Park Mateのサポートページ</h2>
+  </a> -->
+
+  <!-- <a class="app-card" href="liar village/">
+    <h2>嘘つき村の裁判官のサポートページ</h2>
+  </a>
+
+  <a class="app-card" href="lastnote/">
+    <h2>人生をつなぐノートのサポートページ</h2>
+  </a> -->
+
+
+
+  <div class="footer">
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</div>
+</body>
+</html>
